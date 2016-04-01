@@ -1,0 +1,16 @@
+{
+  "name": "component-catalog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "elm.js",
+  "scripts": {
+    "init": "elm-test init",
+    "test": "elm-test TestRunner.elm "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "elm-test": "^0.16.0"
+  }
+}
