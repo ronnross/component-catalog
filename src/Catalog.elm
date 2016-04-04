@@ -22,12 +22,12 @@ type alias Model =
 
 initialModel =
   { catalogList =
-      [ { id = 1, title = "Some component Title", image = "manuk.jpg"}
-      , { id = 2, title = "Component Title", image = "manuk.jpg"}
-      , { id = 3, title = "Another Title", image = "manuk.jpg"}
-      , { id = 4, title = "More titles", image = "manuk.jpg"}
-      , { id = 5, title = "Once again a title", image = "manuk.jpg"}
-      , { id = 6, title = "Hi ", image = "manuk.jpg"}
+      [ { id = 1, title = "Some component Title", image = "images/ddl.png"}
+      , { id = 2, title = "Component Title", image = "images/ddl.png"}
+      , { id = 3, title = "Another Title", image = "images/inputs.png"}
+      , { id = 4, title = "More titles", image = "images/ddl.png"}
+      , { id = 5, title = "Once again a title", image = "images/icons.png"}
+      , { id = 6, title = "Hi ", image = "images/ddl.png"}
       ]
   }
 
@@ -41,12 +41,19 @@ update action model =
     Details id ->
       model
 
+header =
+  div [ class "row" ]
+    [ div [ class "col-md-3 col-lg-3" ]
+        [h1 [] [ text "Catalog"]]
+    , div [ class "col-md-9 col-lg-9" ]
+        [input [ type' "text", class "form-control col-md-8 col-lg-4", placeholder "Search" ] []]
+    ]
 
 view address model =
   div [ class " catalog container" ]
     [ stylesheetLink "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-    , stylesheetLink "main.css"
-    , h1 [] [ text "Catalog"]
+    , stylesheetLink "styles/main.css"
+    , header
     , catalogList model.catalogList
     , itemDetails
     ]

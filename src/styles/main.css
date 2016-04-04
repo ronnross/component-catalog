@@ -1,0 +1,24 @@
+body {
+  background: #f5f5f5;
+}
+
+.thumbnail {
+  margin-bottom: 20px;
+  border: solid 1px #ddd
+  border-radius: 5px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail > * {
+  flex: 1 1 auto;
+}
+
+.thumbnail img {
+  max-height: 270px;
+}
+
+.thumbnail > button {
+  max-height: 42px;
+}

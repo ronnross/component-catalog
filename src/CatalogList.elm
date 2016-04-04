@@ -4,17 +4,13 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 
 
-caption title =
-  div [ class "caption" ]
-    [ h5 [ class "text-center" ] [ text title ]
+thumbnail item =
+  div [ class "thumbnail"]
+    [ h5 [ class "text-center" ] [ text item.title ]
+    , img [ src item.image, alt "image" ] []
     , button [ class "btn btn-primary btn-block"] [ text "More" ]
     ]
 
-thumbnail item =
-  div [ class "thumbnail"]
-    [ img [ src item.image, alt "image" ] []
-    , caption item.title
-    ]
 
 catalogList listings =
     let

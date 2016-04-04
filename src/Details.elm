@@ -8,7 +8,7 @@ import Markdown
 itemDetails =
   div [ class "row" ]
     [ div [ class "col-md-6" ]
-        [ img [ src "manuk.jpg", alt "image" ] []
+        [ img [ src "images/ddl.png", alt "image" ] []
         ]
     , div [ class "col-md-6" ]
         [ Markdown.toHtml markdown ]
