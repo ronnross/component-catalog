@@ -5,15 +5,18 @@ import Html.Attributes exposing (..)
 import Markdown
 
 
-itemDetails =
-  div [ class "row" ]
-    [ div [ class "col-md-6" ]
+itemDetails : Int -> Html
+itemDetails _ =
+  div [ class "row details" ]
+    [ div [ class "col-md-4 col-sm-4" ]
         [ img [ src "images/ddl.png", alt "image" ] []
         ]
-    , div [ class "col-md-6" ]
+    , div [ class "col-md-8 col-sm-8" ]
         [ Markdown.toHtml markdown ]
     ]
 
+
+markdown : String
 markdown = """
 
 # This is a Component's readme

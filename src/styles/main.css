@@ -22,3 +22,7 @@ body {
 .thumbnail > button {
   max-height: 42px;
 }
+
+.details img {
+  max-width: 200px;
+}
